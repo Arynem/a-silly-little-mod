@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "a-silly-little-mod",
+	"version": "${version}",
+	"name": "A Silly Little Mod",
+	"description": "Just A Silly Little Mod By A Silly Little Boy :3",
+	"authors": [
+		"Arynem (ありねむ)"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/a-silly-little-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.arynem.asillylittlemod.ASillyLittleMod"
+		],
+		"fabric-datagen": [
+			"com.arynem.asillylittlemod.ASillyLittleModDataGenerator"
+		]
+	},
+	"mixins": [
+		"a-silly-little-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
