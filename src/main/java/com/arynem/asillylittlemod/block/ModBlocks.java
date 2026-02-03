@@ -15,6 +15,9 @@ public class ModBlocks {
         public static final Block Test = registerBlock("test",
                 new Block(AbstractBlock.Settings.create().strength(1).sounds(BlockSoundGroup.ANVIL).luminance(state -> 15)));
 
+        public static final Block Test2 =registerBlock("test2",
+                new Block(AbstractBlock.Settings.create().strength(34)));
+
 
 
 
@@ -33,8 +36,6 @@ public class ModBlocks {
     }
 
     public static void registerModBlocks() {
-
-
         ASillyLittleMod.LOGGER.info("Registering Mod Blocks For " + ASillyLittleMod.MOD_ID);
     }
 
